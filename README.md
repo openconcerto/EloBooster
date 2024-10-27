@@ -1,0 +1,2 @@
+# EloBooster
+ Training chess app
