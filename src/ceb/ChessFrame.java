@@ -215,10 +215,12 @@ public class ChessFrame extends JFrame {
         Font f1 = this.labelLevel.getFont().deriveFont(Font.BOLD);
         f1 = f1.deriveFont(f1.getSize2D() * 1.5f);
         this.labelLevel.setFont(f1);
+        this.labelLevel.setForeground(Color.BLACK);
         pInfoPlayer.add(this.labelLevel);
 
         final Font f2 = this.labelExp.getFont().deriveFont(this.labelExp.getFont().getSize2D() * 1.5f);
         this.labelExp.setFont(f2);
+        this.labelExp.setForeground(Color.BLACK);
         pInfoPlayer.add(this.labelExp);
 
         c.gridx++;
@@ -240,6 +242,7 @@ public class ChessFrame extends JFrame {
         this.tipsButton.setVisible(false);
         toolbar.add(this.tipsButton);
         this.labelInfo.setVisible(false);
+        this.labelInfo.setForeground(Color.BLACK);
         toolbar.add(this.labelInfo);
         p.add(toolbar, c);
         c.gridy++;
